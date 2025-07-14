@@ -40,3 +40,56 @@ src
 │ │ └── RetailOrderApiApplication.java
 │ └── resources
 │ └── application.properties
+
+
+---
+
+## ⚙️ Getting Started
+
+### 📦 1. Clone the Repo
+```bash
+git clone https://github.com/naveenbyroju/retail-order-api.git
+cd retail-order-api
+
+🛠 2. Setup MySQL
+sql
+Copy
+Edit
+CREATE DATABASE retail;
+🧾 3. Configure application.properties
+Edit src/main/resources/application.properties:
+
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:mysql://localhost:3306/retail
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+▶️ 4. Run the App
+bash
+Copy
+Edit
+./mvnw spring-boot:run
+or run RetailOrderApiApplication.java from IntelliJ
+
+🔄 API Endpoints
+Method	Endpoint	Description
+GET	/api/products	Get all products
+POST	/api/products	Add a new product
+
+💡 Future Enhancements
+Add Customer & Order entities
+
+Integrate authentication (Spring Security)
+
+Add Docker support and CI/CD
+
+👤 Author
+Naveen Byroju
+🖥 LinkedIn
+📦 GitHub
+
+
+
+
