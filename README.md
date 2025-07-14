@@ -30,3 +30,13 @@ A Spring Boot RESTful API for managing products in a retail inventory system. Bu
 
 ## 📂 Project Structure
 
+src
+├── main
+│ ├── java/com/naveen/retail
+│ │ ├── controller
+│ │ ├── service
+│ │ ├── repository
+│ │ ├── model
+│ │ └── RetailOrderApiApplication.java
+│ └── resources
+│ └── application.properties
