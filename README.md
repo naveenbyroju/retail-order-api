@@ -1,12 +1,22 @@
-# Retail Order API
+# 🛒 Retail Order API
 
-A simple Spring Boot RESTful API for managing product inventory and orders.
+A Spring Boot RESTful API for managing products in a retail inventory system. Built with Java 11, Spring Boot, JPA, and MySQL.
+
+![Java](https://img.shields.io/badge/Java-11-blue?logo=java)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7.15-brightgreen?logo=spring-boot)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql)
+![REST API](https://img.shields.io/badge/API-RESTful-orange)
+
+---
 
 ## 🚀 Features
 
-- Add, view, and list products
-- REST endpoints using Spring Boot
-- MySQL integration with Spring Data JPA
+- Add, retrieve, and list products
+- MySQL database integration using Spring Data JPA
+- Exposes clean REST endpoints
+- Easy to extend for customers, orders, or authentication
+
+---
 
 ## 🛠 Tech Stack
 
@@ -16,24 +26,7 @@ A simple Spring Boot RESTful API for managing product inventory and orders.
 - MySQL
 - Maven
 
-## 📦 Running Locally
+---
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/naveenbyroju/retail-order-api.git
-   cd retail-order-api
-   ```
+## 📂 Project Structure
 
-2. Update `application.properties` with your MySQL credentials.
-
-3. Run the app from your IDE or terminal:
-   ```bash
-   mvn spring-boot:run
-   ```
-
-## 📮 API Endpoints
-
-| Method | Endpoint         | Description     |
-|--------|------------------|-----------------|
-| GET    | /api/products    | List products   |
-| POST   | /api/products    | Add product     |
